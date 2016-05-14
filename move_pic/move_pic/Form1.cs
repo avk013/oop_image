@@ -24,12 +24,14 @@ pic a2 = new pic();
         private void button1_Click(object sender, EventArgs e)
         {
             label1.Text += "+";
+            a1.gopict(pic.Direction.Down);
         }
         class pic
         {
+            const int shag=3;
             public Form forma;
             public PictureBox pictureBox;
-            public int x=10,shag1=10, y=10,mi;
+            public int x=shag, shag1=shag, y = shag, mi;
             public enum Direction  { Right, Left, Up, Down, None };
             public Direction direction = Direction.None;
             ////
